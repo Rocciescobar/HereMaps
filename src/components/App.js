@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from './Header';
 
 const App = () => (
   <div>
-    <h1>HOla mundo</h1>
+    <Header />
   </div>
 )
 
