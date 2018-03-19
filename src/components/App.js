@@ -9,18 +9,9 @@ const App = () => (
   <div className="">
     <Header/>
     {/* <Home /> */}
-    <Profile />
+    {/* <Profile /> */}
+    <Social/>
     <Footer/>
   </div>
 )
 export default App
-
-// const App = () => (
-//   <div>
-//     <Header/>
-//     <Home />
-//     <Footer/>
-//   </div>
-// )
-
-// export default App
