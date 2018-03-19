@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from './Header'
-import Home from './Home'
+// import Home from './Home'
+import Profile from './Profile'
 import Footer from './Footer'
 
 const App = () => (
   <div>
     <Header/>
-    <Home />
+    {/* <Home /> */}
+    <Profile />
     <Footer/>
   </div>
 )
