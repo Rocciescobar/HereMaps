@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = () => (
-  <div>
+  <div className="vh-80">
     <form className="mt-3">
       <div className="col-auto">
         <label className="sr-only">Username</label>
