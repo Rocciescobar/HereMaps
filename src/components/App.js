@@ -8,11 +8,12 @@ import NewTrails from './NewTrails'
 const App = () => (
   <div>
     <Header />
+    {/* <NewTrails/>  */}
     {/* <Home /> */}
     {/* <Profile /> */}
     {/* <Social/> */}
-    <NewTrails />
-    <Footer />
+    <Main/>
+    <Footer /> 
   </div>
 )
 export default App
