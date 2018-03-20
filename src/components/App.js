@@ -4,13 +4,15 @@ import Header from './Header'
 import Profile from './Profile'
 import Footer from './Footer'
 import Social from './Social'
+import NewTrails from './NewTrails'
 
 const App = () => (
-  <div className="">
+  <div>
     <Header/>
     {/* <Home /> */}
     {/* <Profile /> */}
-    <Social/>
+    {/* <Social/> */}
+    <NewTrails/>
     <Footer/>
   </div>
 )
