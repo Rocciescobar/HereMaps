@@ -1,19 +1,18 @@
 import React from 'react';
 import Header from './Header'
-// import Home from './Home'
-import Profile from './Profile'
+import Main from './Main';
 import Footer from './Footer'
 import Social from './Social'
 import NewTrails from './NewTrails'
 
 const App = () => (
   <div>
-    <Header/>
+    <Header />
     {/* <Home /> */}
     {/* <Profile /> */}
     {/* <Social/> */}
-    <NewTrails/>
-    <Footer/>
+    <NewTrails />
+    <Footer />
   </div>
 )
 export default App
