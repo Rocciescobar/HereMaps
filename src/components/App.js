@@ -4,6 +4,7 @@ import Main from './Main';
 import Footer from './Footer'
 import Social from './Social'
 import NewTrails from './NewTrails'
+import StartTrail from './StartTrail'
 
 const App = () => (
   <div>
@@ -12,7 +13,8 @@ const App = () => (
     {/* <Home /> */}
     {/* <Profile /> */}
     {/* <Social/> */}
-    <Main/>
+    {/* <Main/> */}
+    <StartTrail/>
     <Footer /> 
   </div>
 )

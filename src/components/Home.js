@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Home = () => (
-  <div className="vh-80">
-    <form className="mt-3">
+  <div className="mt-7">
+    <form className="">
       <div className="col-auto">
         <label className="sr-only">Username</label>
         <div className="input-group mb-2">
