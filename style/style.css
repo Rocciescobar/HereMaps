@@ -9,15 +9,11 @@
 .border-aqua {
   border-color: #00afaa
 }
-
+.mt-7{
+  margin-top: 70px;
+}
 .vh-40 {
   height: 40vh;
-}
-.vh-80 {
-  height: 80vh;
-}
-.vh-10 {
-  height: 10vh;
 }
 .img-trail {
   width: 20%;

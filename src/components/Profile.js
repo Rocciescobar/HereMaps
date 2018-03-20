@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Profile = () => (
-  <div className="container">
+  <div className="container mt-7">
     <div className="row my-3">
       <div className="col-4">
         <img className="img-fluid" src="https://user-images.githubusercontent.com/32296142/37617229-801944a0-2b80-11e8-9a04-2646a54ff368.png" alt="usuario"/>
