@@ -9,12 +9,12 @@ import StartTrail from './StartTrail'
 const App = () => (
   <div>
     <Header />
-    {/* <NewTrails/>  */}
+    <NewTrails/> 
     {/* <Home /> */}
     {/* <Profile /> */}
     {/* <Social/> */}
     {/* <Main/> */}
-    <StartTrail/>
+    {/* <StartTrail/> */}
     <Footer /> 
   </div>
 )

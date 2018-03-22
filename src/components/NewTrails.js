@@ -4,7 +4,7 @@ const NewTrails = () => (
   <div>
     <div className="">
       <div className="container mt-7"> 
-      <img className="img-trail" src="mountains.svg" alt="mountains"/>
+      <img className="img-trail" src="../../assets/mountains.svg" alt="mountains"/>
        <span className="text-uppercase font-weight-bold ml-2 text-aqua">Descubre nuevas rutas</span>
         <div className=" row">
           <div className="col-sm-10 my-2">
