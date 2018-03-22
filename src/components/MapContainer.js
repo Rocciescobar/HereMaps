@@ -47,7 +47,7 @@ export default class MapContainer extends Component {
     }
 
     return ( 
-      <div ref="map" style={style}>
+      <div ref="map" style={style} className="img-fluid">
         loading map...
       </div>
     )
