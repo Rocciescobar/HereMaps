@@ -6,10 +6,10 @@ import NewTrails from './NewTrails';
 
 const Main = () => (
   <main>
-    <Switch>
-      <Route path='/explore' component={NewTrails}/>  
-      <Route exact path='/home' component={Home}/>
-      <Route path='/profile' component={Profile}/>    
+    <Switch>      
+      <Route path='/explorer' component={NewTrails}/>  
+      <Route exact path='/' component={Home}/>
+      <Route path='/profile' component={Profile}/>         
     </Switch>
   </main>
 )
