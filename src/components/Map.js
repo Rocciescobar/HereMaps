@@ -14,4 +14,5 @@ class MyMap extends Component {
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyAUT6K3CoT7YidAEiFwXzTwtlhVhUdAvhc',
+  libraries: ['places']
 })(MyMap)

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom'
 
 export default class MapContainer extends Component {
@@ -15,17 +16,23 @@ export default class MapContainer extends Component {
       const mapRef = this.refs.map; 
       const node = ReactDOM.findDOMNode(mapRef); 
 
+      let {initialCenter, zoom} = this.props;
+      const {lat, lng} = initialCenter;
+      const center = new maps.LatLng(lat, lng);
+
       const mapConfig = Object.assign({}, {
-        center: { lat: -12.145141, lng:-77.021886 },
-        zoom: 17,
-        mapTypeId: 'roadmap' 
+        center: center,
+        zoom: zoom
       })
 
       this.map = new maps.Map(node, mapConfig); 
+
+      // Marcador
       
       const image ='https://user-images.githubusercontent.com/32284212/37753349-77b909ee-2d6a-11e8-9520-03f677d49bf6.png';
       const marker = new google.maps.Marker({ 
-        position: { lat: -12.145141, lng:-77.021886 }, 
+        // position: { lat: -12.145141, lng:-77.021886 }, 
+        position: center, 
         map: this.map, 
         title: location.name, 
         icon: image
@@ -44,5 +51,19 @@ export default class MapContainer extends Component {
         loading map...
       </div>
     )
+  }
+}
+
+MapContainer.propTypes = {
+  zoom: PropTypes.number.isRequired,
+  initialCenter: PropTypes.object.isRequired
+}
+
+MapContainer.defaultProps = {
+  zoom: 16,
+  // Laboratoria Lima
+  initialCenter: {
+    lat: -12.145141,
+    lng: -77.021886
   }
 }
