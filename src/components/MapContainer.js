@@ -22,7 +22,14 @@ export default class MapContainer extends Component {
       })
 
       this.map = new maps.Map(node, mapConfig); // creates a new Google map on the specified node (ref='map') with the specified configuration set above.
-
+      
+      const image ='https://user-images.githubusercontent.com/32284212/37753349-77b909ee-2d6a-11e8-9520-03f677d49bf6.png';
+      const marker = new google.maps.Marker({ // creates a new Google maps Marker object.
+        position: {lat: -12.0869336, lng:-77.0523753 }, // sets position of marker to specified location
+        map: this.map, // sets markers to appear on the map we just created on line 35
+        title: location.name, // the title of the marker is set to the name of the location
+        icon: image
+      });
     }
   }
 
